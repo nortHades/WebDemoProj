@@ -1,0 +1,398 @@
+/* Base Styles */
+body {
+    /* "Star night" theme: Black background with a fixed starry background image */
+    background: #000000 url('images/star-night.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Container to center layout at 80% width */
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  /* Header Styles */
+  header {
+    text-align: center;
+    padding: 80px 20px 60px;
+    position: relative;
+    background-image: url('/images/ai-banner.jpg');
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+  }
+  
+  header::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+  }
+  
+  header h1, header p {
+    position: relative;
+    z-index: 2;
+  }
+  
+  header h1 {
+    font-size: 3.2em;
+    margin: 0;
+    color: #ffffff;
+    text-shadow: 0 0 20px #00ffc3cc;
+  }
+  
+  header p {
+    font-size: 1.4em;
+    color: #b2f5ea;
+    margin-top: 10px;
+  }
+  
+  nav {
+    width: 100%;
+  }
+
+  nav .container {
+    width: 100%;             
+    max-width: 1200px;      
+    margin: 0.5em 0 0 0;     
+    display: flex;           
+    justify-content: center; 
+    align-items: center;     
+    background-color: rgba(34, 34, 34, 0.85);
+  }
+
+  nav .nav_link {
+    list-style: none;
+    display: flex;       
+    margin: 0;           
+    padding: 0;  
+    gap: 2em;        
+  }
+
+
+  a {
+    color: white; /* Set default link color to white */
+    text-decoration: none; /* Remove underline by default (optional, common practice) */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+  }
+  
+  a:hover {
+    color: #1DCD9F; /* Change color on hover to accent color */
+    /* text-decoration: underline; */ /* Optional: Add underline on hover */
+  }
+  
+  
+  /* --- NAVIGATION LINK STYLES (Ensure these OVERRIDE global styles) --- */
+  /* Make sure the existing nav link styles are specific enough */
+  nav .nav_link a {
+    color: #ffffff; 
+    text-decoration: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 8px 15px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: transparent;
+    border-radius: 999px;
+    transition: border-color 0.3s ease, color 0.3s ease;
+  }
+  
+  /* CRUCIAL ADJUSTMENT FOR NAV HOVER: */
+  nav .nav_link a:hover {
+    border-color: #1DCD9F; 
+    color: #ffffff; 
+  }
+
+
+
+
+  .main-aside-wrapper {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    padding: 20px 0;
+  }
+  
+  /* 2. Define column widths*/
+  .main-aside-wrapper main {
+    flex: 3; 
+    padding: 0;
+    background-color: rgba(34, 34, 34, 0.85);
+    margin-bottom: 0;
+  }
+  
+  /* 3. Style the Aside column - ADD STICKY POSITIONING */
+  .main-aside-wrapper aside {
+    flex: 1; 
+    margin: 0; 
+  
+    /* --- Sticky positioning --- */
+    position: sticky;
+    top: 20px;
+    background-color: rgba(34, 34, 34, 0.85); 
+    padding: 20px; 
+    border-radius: 5px; 
+  }
+  
+  
+  /* Main Content Styles */
+  main {
+    padding: 20px;
+    background-color: transparent; /* Slight transparency for a layered starry night feel */
+  }
+  
+  /* Content Section Styling */
+  .content-section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #222222;
+    border-radius: 5px;
+  }
+  
+  /* Headings */
+  h1, h2, h3 {
+    font-family: 'Helvetica', sans-serif;
+  }
+  
+  /* Paragraphs and Lists */
+  p {
+    line-height: 1.6;
+  }
+  /* Decoration for Application */
+  /* Industry Applications Section */
+  #applications {
+    background-color: #222222;         /* Dark background for the section */
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    color: white;
+  }
+  
+  
+  #applications h3 {
+    color: #1DCD9F;   /* Use one of the fresh accent colors for subheadings */
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    border-left: 5px solid #169976; /* Decorative border using the second accent color */
+  }
+  
+  #applications p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: white;
+    margin-bottom: 20px;
+    padding-left: 15px;
+  }
+  
+
+  /* Table Styling */
+  /* Table container settings */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #222222; /* Dark background for table area */
+    color: white;              /* White text */
+    margin-bottom: 20px;
+  }
+  
+  /* Caption styling */
+  table caption {
+    background-color: #1DCD9F; /* Accent color for caption */
+    padding: 10px;
+    font-size: 1.2em;
+    color: white;
+    font-weight: bold;
+  }
+  
+  /* Table header styling */
+  table thead tr {
+    background: linear-gradient(to right, #1DCD9F, #169976);
+  }
+  
+  table thead th {
+    padding: 12px;
+    border: 1px solid #1DCD9F; /* Accent border */
+    text-align: left;
+  }
+  
+  /* Table body styling */
+  table tbody tr {
+    border-bottom: 1px solid #1DCD9F;
+  }
+  
+  table tbody td {
+    padding: 10px;
+    border: 1px solid #222222;
+  }
+  
+  /* Optional: Hover effect on table rows for a subtle refreshing accent */
+  table tbody tr:hover {
+    background-color: #169976;
+    cursor: pointer;
+  }
+  
+  /* Form Styling */
+  form {
+    margin-top: 20px;
+    background-color: #222222;
+    padding: 15px;
+    border-radius: 5px;
+  }
+  
+  input[type="email"],
+  input[type="submit"] {
+    padding: 10px;
+    margin: 5px 0;
+    font-size: 1em;
+    border: none;
+    border-radius: 3px;
+  }
+  
+  input[type="submit"] {
+    background-color: #1DCD9F;
+    color: white;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #169976;
+  }
+  
+
+  
+  /* Aside Styling */
+  aside {
+    background-color: transparent;
+    padding: 20px;
+    margin: 0;
+    border-radius: 5px;
+  }
+
+  aside .content-section {
+    margin-bottom: 20px;
+  }
+
+  aside .content-section:last-child {
+    margin-bottom: 0; 
+  }
+  
+  aside h3 { 
+    color: #1DCD9F;
+    margin-top: 30px; 
+    padding-bottom: 5px;
+    border-bottom: 1px solid #169976;
+  }
+  /* Footer Styling */
+  /* Footer Styling: Adjust spacing and center the control elements if desired */
+  footer {
+    background-color: rgba(34, 34, 34, 0.85);
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+  
+  /* Decorative Background for Headings (optional) */
+  h2 {
+    /* Keep the original background gradient */
+    background: linear-gradient(to right, #1DCD9F, #169976);
+  
+    /* Adjust padding slightly, especially horizontal, to give the mask room */
+    padding: 10px 30px;
+    border-radius: 4px;
+    color: white;
+    margin-bottom: 10px;
+    text-align: center;
+  
+    /* --- CSS Mask for Blending --- */
+    mask-image: linear-gradient(to right,
+        transparent 0%,    
+        black 15%,      
+        black 85%,        
+        transparent 100%   
+    );
+    /* Add -webkit- */
+    -webkit-mask-image: linear-gradient(to right,
+        transparent 0%,
+        black 15%,
+        black 85%,
+        transparent 100%
+    );
+    /* Ensure the mask covers the entire element */
+     mask-size: 100% 100%;
+     -webkit-mask-size: 100% 100%;
+     mask-repeat: no-repeat;
+     -webkit-mask-repeat: no-repeat;
+  }
+
+  #dify-chatbot-bubble-window {
+    position: fixed !important;
+  
+    bottom: 85px !important; 
+    right: 20px !important;
+    z-index: 10000 !important;
+  
+    
+    width: 24rem !important;
+    height: 40rem !important;
+  
+    
+  }
+  
+  
+  #dify-chatbot-bubble-button {
+    position: fixed !important;
+    bottom: 20px !important; 
+    right: 20px !important; 
+    z-index: 9999 !important; 
+    background-color: #1DCD9F !important; 
+  }
+  @media (max-width: 1024x){
+  .main-aside-wrapper {
+    display: flex; 
+    flex-direction: row; 
+    gap: 20px;
+    align-items: flex-start;
+    padding: 20px 0;
+  }
+
+  .main-aside-wrapper main {
+    flex: 3; 
+  }
+
+  .main-aside-wrapper aside {
+    flex: 1; 
+    position: sticky; 
+    top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-aside-wrapper {
+    flex-direction: column; 
+    gap: 30px;
+    padding: 10px 0;
+  }
+
+  .main-aside-wrapper main,
+  .main-aside-wrapper aside {
+    flex: 1 1 auto;
+    width: 100%; 
+  }
+
+  .main-aside-wrapper aside {
+    position: static; 
+    top: auto;
+    margin-bottom: 20px; 
+  }
+}
+  
