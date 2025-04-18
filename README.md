@@ -22,7 +22,7 @@ Venture outside these topics, and you might just trigger his condescending charm
 ## 🚀 Live Demo
 
 Take a spacewalk and chat with Sheldon here:
-**[Link to your GitHub Pages site]**
+**https://northades.github.io/WebDemoProj/**
 
 ## 🛠️ Tech Stack (The basics)
 
