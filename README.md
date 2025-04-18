@@ -34,6 +34,6 @@ Take a spacewalk and chat with Sheldon here:
 
 ## 🙏 Credits
 
-This site was developed by Dong Zhang ([Your GitHub Profile Link]) as part of a collaborative project exploring AI introductions. While the overall project involved a team, this specific site and its quirky chatbot were my primary focus.
+This site was developed by Dong Zhang (https://github.com/nortHades) as part of a collaborative project exploring AI introductions. While the overall project involved a team, this specific site and its quirky chatbot were my primary focus.
 
 ---
